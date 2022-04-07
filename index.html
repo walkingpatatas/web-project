@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Association of Computer Studies Students</title>
+        <link rel="shortcut icon" type="image/png" href="Images/ACSS-Logo.png">
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #f0f0f0;
+            }
+            a:hover{
+                color: #000000;
+            }
+            .bg{
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+                background-color: #000000;
+            }
+            .fade-in{
+                animation: fadeIn 5s;
+                margin-left: 40%;
+                margin-right: 40%;
+                margin-top: 5%;
+            }
+            @keyframes fadeIn{
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            .container{
+                background:transparent;
+                display: flex;
+                justify-content: center;
+                margin-top: 4%;
+            }
+            .iner{
+                text-align: center;
+                color: #008801;
+                overflow: hidden;
+                padding: 2px;
+            }
+            .iner > .orgName{
+                font-size: 40px;
+                font-weight: 600;
+                text-transform: uppercase;
+                animation: slide_up 4.0s ease-in;
+            }
+            .iner > .btn-light{
+                font-size: 15px;
+                color: #f0f0f0;
+                animation: slide_up 5.0s ease-in;
+            }
+            .iner > button{
+                background: #008801;
+                width: 150px;
+                border: none;
+                outline: none;
+                color: #f0f0f0;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 20px;
+                font-weight: 600;
+                margin-top: 5%;
+                animation: slide_up 5.0s ease-in;
+            }
+            .iner > button:hover{
+                color: #000000;
+                cursor: pointer;
+            }
+            @keyframes slide_up{
+                0%{
+                    transform: translateY(300px);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+        <div class="fade-in"><img src="Images/ACSS-Logo.png" height="300px"></div>
+        <div class="container">
+            <div class="iner">
+                <div class="orgName">ASSOCIATION OF COMPUTER STUDIES STUDENTS</div>
+                <button class="btn-light"><a href="home-page.html">Get Started</a></button>  
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
